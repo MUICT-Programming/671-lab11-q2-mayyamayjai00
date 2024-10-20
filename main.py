@@ -8,16 +8,16 @@ def find_min_max(a) :
   z.sort()
   print(f"({a[0]}, {a[n-1]})")
   return a
-list1 = []
-list2 = []
+lst1 = []
+lst2 = []
 update = []
 for i in range(2*n) :
   num = int(input())
   if i < n :
-    list1.append(num)
+    lst1.append(num)
   else :
-    list2.append(num)
+    lst2.append(num)
 
-summation(list1,list2,update)
+summation(lst1,lst2,update)
 print(update)
 find_min_max(update)
